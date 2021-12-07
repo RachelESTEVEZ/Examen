@@ -1,0 +1,216 @@
+*{
+	font-family:bodoni;
+	font-size:15px;
+}
+.azul{
+	color:#002962;
+}
+.backazul{
+	background-color: #002962;
+}
+.rojo{
+	color:#cf0921;
+}
+.backrojo{
+	background:#cf0921;
+}
+a{
+	text-decoration:none;
+} 
+p{ 
+	text-aling:justify;
+}
+
+#cabecera,#botonera,#cuerpo,#pie,#credenciales{
+width:100%;
+}
+
+#cabecera{
+width:100%;
+margin:auto;
+background:#white;
+}
+
+#imglogo{
+width:100%;
+height: auto;
+}
+
+
+#botonera{
+width:100%;
+border-bottom:4px groove #00ccff;
+border-top:5px solid #00ccff;
+height:55px;
+padding-top:5px;
+
+}
+#contenbotonera{
+width:100%;	
+background:#e3f2fd;
+margin:auto;
+}
+
+#cuerpo{
+background:#fdfdfb;
+}
+#panel{
+margin-top:20px;
+width:28%;
+height:400px;
+background:#2d572c;
+float:left;
+box-sizing:border-box;
+
+}
+#contenido{
+width:70%;
+background:##002962;
+float:right;
+box-sizing:border-box;
+
+
+}
+#Pie{
+width:100%;
+height:30px;
+background:#0A0A0A;
+padding-top:10px;
+padding-left:10px;
+clear:both;
+color:white;
+
+}
+#botonera ul{
+	margin-top:5px;
+	padding:0px;
+	list-style-type: none;
+
+}
+#botonera ul li{
+	padding-right:10px;
+	display: inline;
+}
+#botonera ul li a{
+	text-decoration: none;
+	font-family: "Garamond";	
+	font-weight: bold;
+	font-size: 15px;
+	color: #000000;
+}
+.cuadrados{
+	text-align: center;
+	margin-top: 20px;
+	width:30%;
+	margin-right:20px;
+}
+#img1{
+	width: 100%;
+	height: 240px;
+}
+
+#tamano{
+width:100%;
+height:400px;
+}
+
+#imggo{
+width:400px;
+height:600px;
+margin-right:6%;
+margin-left:2%;
+margin-top:0.8%;
+}
+.padre{
+	margin: auto;
+	box-sizing:border-box;
+	padding-left:20px;
+	display:flex;
+}
+.estilo1{
+	font-size: 18px;
+	font-family: Century Gothic;
+}
+.formulario{
+	background:#4882B4;
+	color:white;
+	width: 80%;
+	display:block;
+	margin: auto;
+	border-radius: 20px;
+	margin-bottom: 40px;
+	padding:20px;
+	
+}
+.formulario input{
+	width:90%;
+}
+#loco{
+	text-align: center;
+	margin-top: 60px;
+	width:500%;
+	float:left
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.formulario ul{
+	list-style-type: none;
+}
+.formulario ul li{
+	margin-bottom: 5px;
+}
+li .button{
+	background: #002962;
+	padding: 5px;
+	color:white;
+	margin-top:5px;
+}
+.cuadrados1{
+	text-align: center;
+	margin-top: 60px;
+	width:45%;
+	float:left;
+	font-family: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.parrafo1{
+	text-align: justify;
+}
+/*Prueba Anthony*/
+
+.contenedor{
+	width:80%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+@media screen and (max-width: 800px){
+	#panel{
+		display:none;
+	}
+	#contenido{
+		width:100%;
+		background:#ffffff;
+		float:right;
+		box-sizing:border-box;
+	}
+	.cuadrados{
+		text-align: center;
+		margin-top: 20px;
+		width:100%;
+		margin-right:20px;
+	}
+	.padre{
+		margin: auto;
+		box-sizing:border-box;
+		padding-left:20px;
+		padding-right:20px;
+		display:block;
+	}
+	
+}
+#limonada{
+		margin: auto;
+	}
+		
