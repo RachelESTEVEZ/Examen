@@ -1,0 +1,98 @@
+<html>
+	
+	<head>
+	    <title>Suscribete</title>
+		<link href="css/hojaestilo.css" rel="stylesheet" type="text/css"/>
+      
+	</head>
+	<body>
+	    
+		<div id="contencabecera">
+             <header id="cabecera">
+				<img src ="images/10.PNG" id="imglogo">
+		     </header>
+		</div>
+		
+		<div id = "contenbotonera">
+		    <nav id = "botonera">
+			<center>
+				<ul> 
+					<li> <a href="Index.html">Inicio</a> </li>
+						<li> <a href="Index 2.html">Computadoras</a> </li>
+						<li> <a href="Index 3.html">Tablets</a> </li>
+						<li> <a href="Index 4.html">Celulares</a> </li>	 
+						<li> <a href="Index 5.html">Impresoras</a> </li>
+						<li> <a href="Index 6.html">Audifonos</a> </li>
+						<li> <a href="Index 7.html">Memorias</a> </li>
+						<li> <a href="Index 8.html">Ofertas</a> </li>	
+						<li> <a href="Index 9.html">Tarjeta de regalo gratis</a> </li>
+						<li> <a href="Index 10.html">Suscribete</a> </li> 
+				</ul>
+				</center>
+		    </nav>   
+		</div>
+		
+			<footer id= "Pie"><center> Suscribete para que veas todas nuestras ofertas. </center>
+			</footer>
+			<div class="formulario backazul">
+						<form style="margin: auto;">
+							<center><h3>Suscribete</h3></center>
+							<ul>
+								<li>
+									<label for="name">Nombres:</label>
+								</li>
+								<li>
+									<input type="text" id="name" name="user_name">
+								</li>
+								<li>
+									<label for="lastname">Apellidos:</label>
+								</li>
+								<li>
+									<input type="text" id="lastname" name="user_lastname">
+								</li>
+								<li>
+									<label for="age">Email:</label>
+								</li>
+								<li>
+									<input type="number" id="age" name="user_age">
+								</li>
+								<li>
+									<label for="pais">Pais</label>
+								</li>
+								<li>
+									<input type="text" id="best" name="user_best">
+								</li>
+								<li>
+									<label for="worst">Codigo Postal</label>
+								</li>
+								<li>
+									<input type="text" id="worst" name="user_worst">
+								</li>
+
+								<li>
+									<button type="submit" class="button" onclick="mensaje();">Envíe su respuesta</button>
+								</li>
+							</ul>
+						</form>
+					</div>
+			
+			<footer id= "Pie">
+				<center>© 2021 CUBOTRONIC Todos los derechos reservados.</center>
+			</footer>
+	
+	<script>
+		function mensaje() {
+			var nombre = document.getElementById("name").value;
+			var apellido = document.getElementById("lastname").value;
+			var edad = document.getElementById("age").value;
+			var mejor = document.getElementById("best").value;
+			var peor = document.getElementById("worst").value;
+			if(!confirm("Nombre: "+nombre+"\n"+"Apellido: "+apellido+"\n"+"Email: "+edad+"\n"+"Pais: "+mejor+"\n"+"Codigo Postal: "+peor+"\n")) {
+				return false;
+			}
+		  this.form.submit();
+		}		
+	</script>
+</html>
+		
+	</body>

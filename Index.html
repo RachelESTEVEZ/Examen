@@ -1,0 +1,114 @@
+<html>
+	
+	<head>
+	    <title>Cubotronic</title>
+		<link href="css/hojaestilo.css" rel="stylesheet" type="text/css"/>
+      
+	</head>
+	<body>
+		<div class="contenedor">
+			<header id="cabecera">
+				<img src ="images/1.PNG" id="imglogo">
+			</header>
+			
+			<div id = "contenbotonera">
+				<nav id = "botonera">
+				<center>
+					<ul> 
+						<li> <a href="Index.html">Inicio</a> </li>
+						<li> <a href="Index 2.html">Computadoras</a> </li>
+						<li> <a href="Index 3.html">Tablets</a> </li>
+						<li> <a href="Index 4.html">Celulares</a> </li>	 
+						<li> <a href="Index 5.html">Impresoras</a> </li>
+						<li> <a href="Index 6.html">Audifonos</a> </li>
+						<li> <a href="Index 7.html">Memorias</a> </li>
+						<li> <a href="Index 8.html">Ofertas</a> </li>	
+						<li> <a href="Index 9.html">Tarjeta de regalo gratis</a> </li>
+						<li> <a href="Index 10.html">Suscribete</a> </li>
+					</ul>
+					</center>
+				</nav>   
+			</div>
+			<section id= "cuerpo">
+				<aside id= "panel">
+					<img src ="images/Por.jpg" id="tamano">  
+				</aside>
+				<section id= "contenido">
+					<div class="padre">
+						<div class="cuadrados">
+							<img src ="images/c6.jpg" id="img1">
+							<h5><a href="Index 2.html">Computadoras</a></h5>
+						</div>
+						<div class="cuadrados">
+							<img src ="images/t5.jpg" id="img1">
+							<h5><a href="Index 3.html">Tablets</a></h5>
+						</div>
+						<div class="cuadrados">
+							<img src ="images/i1.jpg" id="img1">
+							<h5><a href="Index 4.html">Celulares</a></h5>
+						</div>
+					</div>
+					<div class="formulario backazul">
+						<form style="margin: auto;">
+							<center><h3>Cuestionario</h3></center>
+							<ul>
+								<li>
+									<label for="name">Nombres:</label>
+								</li>
+								<li>
+									<input type="text" id="name" name="user_name">
+								</li>
+								<li>
+									<label for="lastname">Apellidos:</label>
+								</li>
+								<li>
+									<input type="text" id="lastname" name="user_lastname">
+								</li>
+								<li>
+									<label for="age">Edad:</label>
+								</li>
+								<li>
+									<input type="number" id="age" name="user_age">
+								</li>
+								<li>
+									<label for="best">Cual es tu celular favorito?</label>
+								</li>
+								<li>
+									<input type="text" id="best" name="user_best">
+								</li>
+								<li>
+									<label for="worst">Que es tu tablet favorita?</label>
+								</li>
+								<li>
+									<input type="text" id="worst" name="user_worst">
+								</li>
+
+								<li>
+									<button type="submit" class="button" onclick="mensaje();">Envíe su respuesta</button>
+								</li>
+							</ul>
+						</form>
+					</div>
+				</section>
+			</section>
+			<footer id= "Pie">
+				<center>© 2021 CUBOTRONIC. Todos los derechos reservados.</center>
+			</footer>
+		</div>
+		
+
+	</body>
+	<script>
+		function mensaje() {
+			var nombre = document.getElementById("name").value;
+			var apellido = document.getElementById("lastname").value;
+			var edad = document.getElementById("age").value;
+			var mejor = document.getElementById("best").value;
+			var peor = document.getElementById("worst").value;
+			if(!confirm("Nombre: "+nombre+"\n"+"Apellido: "+apellido+"\n"+"Edad: "+edad+"\n"+"Postre Vegano: "+mejor+"\n"+"Hamburguesa vegana: "+peor+"\n")) {
+				return false;
+			}
+		  this.form.submit();
+		}		
+	</script>
+</html>
